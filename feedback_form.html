@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Feedback Form</h2>
+      <form action="process_feedback.php" method="post">
+        <!-- Feedback form fields -->
+        <label for="lecture">Select Lecture:</label>
+        <select name="lecture" id="lecture">
+          <option value="lecture1_CPP">Lecture 1 CPP</option>
+          <!--  you can add your own subjects -->
+          <option value="lecture2_Adv_PHP">Lecture 2 Adv PHP</option>
+          <!--  you can add your own subjects -->
+          <option value="lecture3_Networking">Lecture 3 Networking</option>
+          <!--  you can add your own subjects -->
+          <option value="lecture4_Operating_System">
+            Lecture 4 Operating System
+          </option>
+          <!--  you can add your own subjects -->
+          <!-- Add more options as needed -->
+        </select>
+        <label for="feedback">Feedback:</label>
+        <textarea name="feedback" id="feedback" rows="5" required></textarea>
+        <button type="submit" name="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </body>
+</html>
